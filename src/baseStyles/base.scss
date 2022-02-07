@@ -1,0 +1,56 @@
+@import-normalize;
+@import "./typography.scss";
+
+//styles for base elements - containers, titles, text
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: $bg-grey;
+  width: 100%;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.main-container {
+  max-width: 1170px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0 60px;
+  }
+  @media screen and (max-width: 1023px) {
+    padding: 0 32px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 0 16px;
+  }
+}
+
+.title-l {
+  font-size: $head-1-fz;
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+.title-m {
+  font-size: $head-2-fz;
+  font-family: "Nunito", sans-serif;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+.text {
+  font-size: $body-fz;
+  font-family: "Nunito", sans-serif;
+  line-height: 26px;
+  font-weight: normal;
+}

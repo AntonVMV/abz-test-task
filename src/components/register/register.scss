@@ -1,0 +1,57 @@
+.register__container {
+  margin-top: 175px;
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    margin-top: 145px;
+  }
+}
+
+.register__form {
+  display: grid;
+  max-width: 380px;
+  margin: 0 auto;
+  text-align: start;
+}
+
+.register__title {
+  margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    max-width: 280px;
+    margin: 0 auto 10px;
+  }
+}
+
+.register__subtitle {
+  margin-bottom: 32px;
+}
+
+.register__button {
+  justify-self: center;
+}
+
+.register__bg {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 180px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 148px;
+  }
+}
+
+.register__bg-image {
+  position: absolute;
+  right: -490px;
+  bottom: 0;
+  @media screen and (max-width: 1200px) {
+    right: -565px;
+  }
+  @media screen and (max-width: 1023px) {
+    right: -538px;
+  }
+  @media screen and (max-width: 767px) {
+    height: 124px;
+    right: -370px;
+  }
+}

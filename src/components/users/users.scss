@@ -1,0 +1,88 @@
+.users__container {
+  margin-top: 190px;
+  display: grid;
+  text-align: center;
+  @media screen and (max-width: 1200px) {
+    margin-top: 175px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 145px;
+  }
+}
+
+.users__subtitle {
+  margin-top: 10px;
+}
+
+//CARDS
+.cards {
+  list-style: none;
+}
+
+.users__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  grid-gap: 30px;
+  margin: 32px 0 50px;
+
+  @media screen and (max-width: 1200px) {
+    grid-gap: 25px;
+  }
+  @media screen and (max-width: 1023px) {
+    grid-gap: 16px;
+  }
+  @media screen and (max-width: 767px) {
+    grid-gap: 25px;
+    grid-template-columns: minmax(200px, 370px);
+    justify-content: center;
+  }
+}
+
+//USER-CARD
+.cards__element {
+  background-color: #fff;
+  padding: 36px 30px;
+  height: 313px;
+  // max-width: 370px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.card-item__avatar {
+  border-radius: 100%;
+  margin-bottom: 15px;
+}
+
+.card-item__title {
+  width: 100%;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  box-orient: vertical;
+}
+
+.card-item__text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.card-item__email {
+  cursor: pointer;
+}
+
+.users__loading {
+  grid-column: 1 / -1;
+}

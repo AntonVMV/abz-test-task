@@ -1,0 +1,17 @@
+@import "../../baseStyles/typography.scss";
+
+//FORM
+
+.register__upload {
+  position: relative;
+}
+
+.register__inputs {
+  display: grid;
+  grid-gap: 47px;
+  margin-bottom: 44px;
+}
+
+.register__upload {
+  margin: 42px 0 49px;
+}
