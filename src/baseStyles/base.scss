@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Nunito";
+  src: url(./font/Nunito-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
 @import-normalize;
 @import "./typography.scss";
 
