@@ -14,13 +14,14 @@ const Input = styled("input")({
   display: "none",
 });
 
-const CutomButton = styled(Button)({
+const CutomButton = styled(Button)((props) => ({
   fontFamily: "Nunito",
   fontSize: "16px",
   textTransform: "none",
   minWidth: "83px",
   color: "#000",
-  border: "1px solid black",
+  border: "1px solid",
+  borderColor: props.isError ? "#d32f2f" : "#000",
   position: "absolute",
   left: 0,
   height: "100%",
@@ -28,7 +29,7 @@ const CutomButton = styled(Button)({
   "&:hover": {
     backgroundColor: "transparent",
   },
-});
+}));
 
 export const UploadField = ({ onChange, value, error }) => {
   return (
@@ -45,7 +46,9 @@ export const UploadField = ({ onChange, value, error }) => {
             startAdornment: (
               <>
                 <Container />
-                <CutomButton variant="text">Upload</CutomButton>
+                <CutomButton isError={!!error} variant="text">
+                  Upload
+                </CutomButton>
               </>
             ),
           }}
