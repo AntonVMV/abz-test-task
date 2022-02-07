@@ -6,7 +6,7 @@ export const About = () => {
     <section className="about">
       <div className="main-container about__container">
         <img
-          src="./img/about-image.png"
+          src="./img/about-image.webp"
           alt="about container"
           className="about__image"
         />
